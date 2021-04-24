@@ -1,7 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8b58d77-078e-4bb6-a233-4f66dfd77ac2" name="Default Changelist" comment="" />
+    <list default="true" id="b8b58d77-078e-4bb6-a233-4f66dfd77ac2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/flutter_ecommerceapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/kotlin/com/example/flutter_ecommerceapp/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/res/drawable-v21/launch_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/res/values-night/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/IMG_1266.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/cats/accessories.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/cats/dress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/cats/formal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/cats/informal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/cats/jeans.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/cats/shoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/cats/tshirt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/m1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/m2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/blazer1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/blazer2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/dress1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/dress2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/hills1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/hills2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/pants1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/pants2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/shoe1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/skt1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/products/skt2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/w1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/w3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/w4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/ios/Runner/Runner-Bridging-Header.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Components/Horizontal_ListView.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Components/products.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/Product_Details.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/home.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/pubspec.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,26 +159,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619283575275" />
-    <state x="1029" y="416" key="Github.ShareDialog" timestamp="1619289660315">
+    <state x="1029" y="416" key="Github.ShareDialog" timestamp="1619290119519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1029" y="416" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619289660315" />
-    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1619286219945">
+    <state x="1029" y="416" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619290119519" />
+    <state x="879" y="224" key="Github.UntrackedFilesDialog" timestamp="1619290128959">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619286219945" />
-    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1619286219945">
+    <state x="879" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619290128959" />
+    <state width="670" height="265" key="GridCell.Tab.0.bottom" timestamp="1619290017883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619286219945" />
-    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1619286219945">
+    <state width="670" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619290017883" />
+    <state width="670" height="265" key="GridCell.Tab.0.center" timestamp="1619290017883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619286219945" />
-    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1619286219945">
+    <state width="670" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619290017883" />
+    <state width="670" height="265" key="GridCell.Tab.0.left" timestamp="1619290017883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619286219945" />
+    <state width="670" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619290017883" />
+    <state width="670" height="265" key="GridCell.Tab.0.right" timestamp="1619290017883">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="670" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619290017883" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1619285363378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
