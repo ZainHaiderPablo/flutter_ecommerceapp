@@ -4,6 +4,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 // my packages
 import 'package:flutter_ecommerceapp/Components/Horizontal_ListView.dart';
 import 'package:flutter_ecommerceapp/Components/products.dart';
+import 'package:flutter_ecommerceapp/Pages/Cart.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -39,7 +40,9 @@ class _HomePageState extends State<HomePage> {
         title: Text('DressUp'),
         actions: <Widget>[
           new IconButton(icon: Icon(Icons.search), onPressed: () {}),
-          new IconButton(icon: Icon(Icons.shopping_cart), onPressed: () {})
+          new IconButton(icon: Icon(Icons.shopping_cart), onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> new shop_cart()));
+          })
         ],
       ),
       drawer: new Drawer(
@@ -64,7 +67,7 @@ class _HomePageState extends State<HomePage> {
             onTap: (){},
             child: ListTile(
               title: Text('Home Page'),
-              leading: Icon(Icons.home),
+              leading: Icon(Icons.home , color: Colors.blueAccent),
 
             ),
           ),
@@ -73,7 +76,7 @@ class _HomePageState extends State<HomePage> {
             onTap: (){},
             child: ListTile(
               title: Text('My Account'),
-              leading: Icon(Icons.person),
+              leading: Icon(Icons.person , color: Colors.blueAccent),
 
             ),
           ),
@@ -82,16 +85,16 @@ class _HomePageState extends State<HomePage> {
             onTap: (){},
             child: ListTile(
               title: Text('My Orders'),
-              leading: Icon(Icons.shopping_basket),
+              leading: Icon(Icons.shopping_basket , color: Colors.blueAccent),
 
             ),
           ),
 
           InkWell(
-            onTap: (){},
+            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=> new shop_cart()));},
             child: ListTile(
               title: Text('Shopping Cart'),
-              leading: Icon(Icons.shopping_cart),
+              leading: Icon(Icons.shopping_cart , color: Colors.blueAccent,),
 
             ),
           ),
@@ -109,7 +112,7 @@ class _HomePageState extends State<HomePage> {
             onTap: (){},
             child: ListTile(
               title: Text('Settings'),
-              leading: Icon(Icons.settings, color: Colors.blueAccent,),
+              leading: Icon(Icons.settings),
 
             ),
           ),
@@ -119,7 +122,7 @@ class _HomePageState extends State<HomePage> {
             onTap: (){},
             child: ListTile(
               title: Text('About'),
-              leading: Icon(Icons.info , color: Colors.grey,),
+              leading: Icon(Icons.info ),
 
             ),
           ),
