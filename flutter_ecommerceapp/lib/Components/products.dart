@@ -44,6 +44,18 @@ class _ProductsState extends State<Products> {
       "old_price": 1200,
       "discounted_price": 850,
     },
+    {
+      "name": "Shoes",
+      "picture": "assets/images/products/shoe1.jpg",
+      "old_price": 1200,
+      "discounted_price": 1000,
+    },
+    {
+      "name": "Shoes",
+      "picture": "assets/images/products/shoe1.jpg",
+      "old_price": 1200,
+      "discounted_price": 1000,
+    },
   ];
 
   @override
@@ -53,21 +65,24 @@ class _ProductsState extends State<Products> {
         gridDelegate:
             new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemBuilder: (BuildContext context, int index) {
-          return Single_Product(
-            product_name: product_list[index]['name'],
-            product_picture: product_list[index]['picture'],
-            product_old_price: product_list[index]['old_price'],
-            product_discounted_price: product_list[index]['discounted_price'],
+          return Padding(
+            padding: const EdgeInsets.all(4.0),
+            child: Single_Product(
+              product_name: product_list[index]['name'],
+              product_picture: product_list[index]['picture'],
+              product_old_price: product_list[index]['old_price'],
+              product_discounted_price: product_list[index]['discounted_price'],
+            ),
           );
         });
   }
 }
 
-class Single_Product extends StatelessWidget {
-  final product_name;
-  final product_picture;
-  final product_old_price;
-  final product_discounted_price;
+class Single_Product extends StatelessWidget {final product_name;
+final product_picture;
+final product_old_price;
+final product_discounted_price;
+
 
   Single_Product({
     this.product_name,
