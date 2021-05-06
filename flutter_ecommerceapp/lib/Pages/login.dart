@@ -139,6 +139,7 @@ class _LoginPageState extends State<LoginPage> {
                                       decoration: InputDecoration(
                                         hintText: "Email",
                                         icon: Icon(Icons.email_outlined),
+                                          border: InputBorder.none
                                       ),
                                       // ignore: missing_return
                                       validator: (value) {
@@ -168,6 +169,7 @@ class _LoginPageState extends State<LoginPage> {
                                       decoration: InputDecoration(
                                         hintText: "Password",
                                         icon: Icon(Icons.lock_outline),
+                                          border: InputBorder.none
                                       ),
                                       // ignore: missing_return
                                       validator: (value){

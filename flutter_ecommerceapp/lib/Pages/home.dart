@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
@@ -5,6 +6,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter_ecommerceapp/Components/Horizontal_ListView.dart';
 import 'package:flutter_ecommerceapp/Components/products.dart';
 import 'package:flutter_ecommerceapp/Pages/Cart.dart';
+import 'package:flutter_ecommerceapp/Pages/login.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -126,6 +128,16 @@ class _HomePageState extends State<HomePage> {
 
             ),
           ),
+
+          InkWell(
+            onTap: (){
+              FirebaseAuth.instance.signOut().then((value) => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> LoginPage())));
+            },
+            child: ListTile(
+              title: Text('Log out'),
+              leading: Icon(Icons.transit_enterexit , color: Colors.grey,),
+            ),
+          )
 
 
         ],

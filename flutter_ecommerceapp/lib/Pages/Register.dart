@@ -1,5 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import '../DataBase/Users.dart';
+import 'home.dart';
 
 class Register extends StatefulWidget {
   @override
@@ -9,6 +12,7 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   final _formKey = GlobalKey<FormState>();
+  UserServices _userServices = UserServices();
   TextEditingController _emailTextController = TextEditingController();
   TextEditingController _passwordTextController = TextEditingController();
   TextEditingController _confirmpasswordTextController =
@@ -17,6 +21,7 @@ class _RegisterState extends State<Register> {
   String gender;
   String groupValue = "male";
   bool loading = false;
+  bool HidePassword = true;
 
   @override
   Widget build(BuildContext context) {
@@ -59,9 +64,9 @@ class _RegisterState extends State<Register> {
                                 child: TextFormField(
                                   controller: _nameTextController,
                                   decoration: InputDecoration(
-                                    hintText: "Full name",
-                                    icon: Icon(Icons.person_outline),
-                                  ),
+                                      hintText: "Full name",
+                                      icon: Icon(Icons.person_outline),
+                                      border: InputBorder.none),
                                   // ignore: missing_return
                                   validator: (value) {
                                     if (value.isEmpty) {
@@ -74,40 +79,6 @@ class _RegisterState extends State<Register> {
                             ),
                           ),
 
-                         Padding(
-                           padding: const EdgeInsets.fromLTRB(14.0, 8.0, 14.0, 8.0),
-                           child: new Container(
-                              color: Colors.white.withOpacity(0.8),
-                              child: Row(
-                                children: <Widget>[
-                                  Expanded(
-                                      child: ListTile(
-                                          title: Text(
-                                            "male",
-                                            textAlign: TextAlign.end,
-                                            style: TextStyle(color: Colors.white),
-                                          ),
-                                          trailing: Radio(
-                                              value: "male",
-                                              groupValue: groupValue,
-                                              onChanged: (e) => valueChanged(e)))),
-
-                                  Expanded(
-                                      child: ListTile(
-                                          title: Text(
-                                            "female",
-                                            textAlign: TextAlign.end,
-                                            style: TextStyle(color: Colors.white),
-                                          ),
-                                          trailing: Radio(
-                                              value: "female",
-                                              groupValue: groupValue,
-                                              onChanged: (e) => valueChanged(e)))),
-
-                                ],
-                              ),
-                            ),
-                         ),
                           Padding(
                             padding:
                                 const EdgeInsets.fromLTRB(14.0, 8.0, 14.0, 8.0),
@@ -120,9 +91,9 @@ class _RegisterState extends State<Register> {
                                 child: TextFormField(
                                   controller: _emailTextController,
                                   decoration: InputDecoration(
-                                    hintText: "Email",
-                                    icon: Icon(Icons.email_outlined),
-                                  ),
+                                      hintText: "Email",
+                                      icon: Icon(Icons.email_outlined),
+                                      border: InputBorder.none),
                                   // ignore: missing_return
                                   validator: (value) {
                                     if (value.isEmpty) {
@@ -142,27 +113,75 @@ class _RegisterState extends State<Register> {
                           Padding(
                             padding:
                                 const EdgeInsets.fromLTRB(14.0, 8.0, 14.0, 8.0),
+                            child: new Container(
+                              color: Colors.white.withOpacity(0.8),
+                              child: Row(
+                                children: <Widget>[
+                                  Expanded(
+                                      child: ListTile(
+                                          title: Text(
+                                            "male",
+                                            textAlign: TextAlign.end,
+                                            style:
+                                                TextStyle(color: Colors.white),
+                                          ),
+                                          trailing: Radio(
+                                              value: "male",
+                                              groupValue: groupValue,
+                                              onChanged: (e) =>
+                                                  valueChanged(e)))),
+                                  Expanded(
+                                      child: ListTile(
+                                          title: Text(
+                                            "female",
+                                            textAlign: TextAlign.end,
+                                            style:
+                                                TextStyle(color: Colors.white),
+                                          ),
+                                          trailing: Radio(
+                                              value: "female",
+                                              groupValue: groupValue,
+                                              onChanged: (e) =>
+                                                  valueChanged(e)))),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.fromLTRB(14.0, 8.0, 14.0, 8.0),
                             child: Material(
                               borderRadius: BorderRadius.circular(10.0),
                               color: Colors.white.withOpacity(0.8),
                               elevation: 0.0,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 12.0),
-                                child: TextFormField(
-                                  controller: _passwordTextController,
-                                  decoration: InputDecoration(
-                                    hintText: "Password",
-                                    icon: Icon(Icons.lock_outline),
+                                child: ListTile(
+                                  title: TextFormField(
+                                    controller: _passwordTextController,
+                                    obscureText: HidePassword,
+                                    decoration: InputDecoration(
+                                        hintText: "Password",
+                                        icon: Icon(Icons.lock_outline),
+                                        border: InputBorder.none),
+                                    // ignore: missing_return
+                                    validator: (value) {
+                                      if (value.isEmpty) {
+                                        return "Please Enter Password";
+                                      } else if (value.length < 6) {
+                                        return " Password must be alteast 6 Characters";
+                                      }
+                                      return null;
+                                    },
                                   ),
-                                  // ignore: missing_return
-                                  validator: (value) {
-                                    if (value.isEmpty) {
-                                      return "Please Enter Password";
-                                    } else if (value.length < 6) {
-                                      return " Password must be alteast 6 Characters";
-                                    }
-                                    return null;
-                                  },
+                                  trailing: IconButton(
+                                    icon: Icon(Icons.remove_red_eye),
+                                    onPressed: () {
+                                      setState(() {
+                                        HidePassword = false;
+                                      });
+                                    },
+                                  ),
                                 ),
                               ),
                             ),
@@ -177,21 +196,35 @@ class _RegisterState extends State<Register> {
                               elevation: 0.0,
                               child: Padding(
                                 padding: const EdgeInsets.only(left: 12.0),
-                                child: TextFormField(
-                                  controller: _confirmpasswordTextController,
-                                  decoration: InputDecoration(
-                                    hintText: "Confirm password",
-                                    icon: Icon(Icons.lock_outline),
+                                child: ListTile(
+                                  title: TextFormField(
+                                    controller: _confirmpasswordTextController,
+                                    obscureText: HidePassword,
+                                    decoration: InputDecoration(
+                                        hintText: "Confirm password",
+                                        icon: Icon(Icons.lock_outline),
+                                        border: InputBorder.none),
+                                    // ignore: missing_return
+                                    validator: (value) {
+                                      if (value.isEmpty) {
+                                        return "Please enter password";
+                                      } else if (value.length < 6) {
+                                        return " Password must be alteast 6 characters";
+                                      } else if (_passwordTextController.text !=
+                                          value) {
+                                        return "Password do not match";
+                                      }
+                                      return null;
+                                    },
                                   ),
-                                  // ignore: missing_return
-                                  validator: (value) {
-                                    if (value.isEmpty) {
-                                      return "Please enter password";
-                                    } else if (value.length < 6) {
-                                      return " Password must be alteast 6 characters";
-                                    }
-                                    return null;
-                                  },
+                                  trailing: IconButton(
+                                    icon: Icon(Icons.remove_red_eye),
+                                    onPressed: () {
+                                      setState(() {
+                                        HidePassword = false;
+                                      });
+                                    },
+                                  ),
                                 ),
                               ),
                             ),
@@ -204,7 +237,9 @@ class _RegisterState extends State<Register> {
                                 color: Colors.blueAccent,
                                 elevation: 0.0,
                                 child: MaterialButton(
-                                  onPressed: () {},
+                                  onPressed: () async {
+                                    validateForm();
+                                  },
                                   minWidth: MediaQuery.of(context).size.width,
                                   child: Text(
                                     "Sign up",
@@ -252,9 +287,38 @@ class _RegisterState extends State<Register> {
     setState(() {
       if (e == "male") {
         groupValue = e;
+        gender = e;
       } else if (e == "female") {
         groupValue = e;
+        gender = e;
       }
     });
   }
+
+  Future validateForm() async {
+  FormState formState = _formKey.currentState;
+  Map value;
+
+  if(formState.validate()){
+    formState.reset();
+    User user = firebaseAuth.currentUser;
+    if (user == null) {
+      firebaseAuth.createUserWithEmailAndPassword(email: _emailTextController.text, password: _passwordTextController.text).then((user) => {
+
+        _userServices.createUser(
+             {
+              "username" : _nameTextController,
+               "email" :   _emailTextController,
+               "userId" : user.user.uid,
+               "gender" : gender,
+            }
+        )
+      }).catchError((error) => {print(error.toString())});
+
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => HomePage()));
+    }
+  }
+  }
 }
+

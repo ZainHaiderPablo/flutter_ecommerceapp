@@ -13,6 +13,6 @@ void main() async{
       theme: ThemeData(
         primaryColor: Colors.blueAccent
       ),
-      home: LoginPage(),
+      home: HomePage(),
       ));
 }

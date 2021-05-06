@@ -19,24 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8b58d77-078e-4bb6-a233-4f66dfd77ac2" name="Default Changelist" comment="Shopping Cart">
-      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/dressing.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/google.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/login_background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/Register.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+    <list default="true" id="b8b58d77-078e-4bb6-a233-4f66dfd77ac2" name="Default Changelist" comment="User Login and Register">
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/DataBase/Users.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Components/Horizontal_ListView.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Components/Horizontal_ListView.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Components/products.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Components/products.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/Product_Details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/Product_Details.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/Register.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/Register.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/login.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +34,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ae9dr8uwjb5x5pdy]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -158,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619379099563</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="User Login and Register">
+      <created>1620222559839</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620222559839</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,7 +173,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="Shopping Cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shopping Cart" />
+    <MESSAGE value="User Login and Register" />
+    <option name="LAST_COMMIT_MESSAGE" value="User Login and Register" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620053057784">
@@ -203,30 +201,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="879" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619290128959" />
-    <state width="1340" height="220" key="GridCell.Tab.0.bottom" timestamp="1620220633661">
+    <state width="914" height="220" key="GridCell.Tab.0.bottom" timestamp="1620314025884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620220633661" />
-    <state width="1340" height="220" key="GridCell.Tab.0.center" timestamp="1620220633661">
+    <state width="914" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620314025884" />
+    <state width="914" height="220" key="GridCell.Tab.0.center" timestamp="1620314025883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="220" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620220633661" />
-    <state width="1340" height="220" key="GridCell.Tab.0.left" timestamp="1620220633661">
+    <state width="914" height="220" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620314025883" />
+    <state width="914" height="220" key="GridCell.Tab.0.left" timestamp="1620314025883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="220" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620220633661" />
-    <state width="1340" height="220" key="GridCell.Tab.0.right" timestamp="1620220633661">
+    <state width="914" height="220" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620314025883" />
+    <state width="914" height="220" key="GridCell.Tab.0.right" timestamp="1620314025883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="220" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620220633661" />
+    <state width="914" height="220" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620314025883" />
     <state x="908" y="125" width="998" height="716" key="SettingsEditor" timestamp="1620056246154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="908" y="125" width="998" height="716" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1620056246154" />
-    <state x="775" y="251" key="Vcs.Push.Dialog.v2" timestamp="1619379141889">
+    <state x="775" y="251" key="Vcs.Push.Dialog.v2" timestamp="1620222649354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="775" y="251" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619379141889" />
+    <state x="775" y="251" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620222649354" />
     <state x="862" y="580" width="672" height="677" key="run.anything.popup" timestamp="1620051202905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

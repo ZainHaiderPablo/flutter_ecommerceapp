@@ -60,6 +60,32 @@ flutter:
 
      - assets/images/
      - assets/images/dressing.jpg
+     - assets/images/google.png
+     - assets/images/logo.png
+     - assets/images/m1.jpeg
+     - assets/images/m2.jpg
+     - assets/images/w1.jpeg
+     - assets/images/w3.jpeg
+     - assets/images/w4.jpeg
+     - assets/images/c1.jpg
+     - assets/images/products/blazer1.jpeg
+     - assets/images/products/blazer2.jpeg
+     - assets/images/products/dress1.jpeg
+     - assets/images/products/dress2.jpeg
+     - assets/images/products/hills1.jpeg
+     - assets/images/products/hills2.jpeg
+     - assets/images/products/pants1.jpg
+     - assets/images/products/pants2.jpeg
+     - assets/images/products/shoe1.jpg
+     - assets/images/products/skt1.jpeg
+     - assets/images/products/skt2.jpeg
+     - assets/images/cats/accessories.png
+     - assets/images/cats/dress.png
+     - assets/images/cats/formal.png
+     - assets/images/cats/informal.png
+     - assets/images/cats/jeans.png
+     - assets/images/cats/shoe.png
+     - assets/images/cats/tshirt.png
 
   #   - images/a_dot_ham.jpeg
 
