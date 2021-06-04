@@ -30,10 +30,19 @@ class _LoginPageState extends State<LoginPage> {
     isSignedIn();
   }
 
+
+
   void isSignedIn() async {
     setState(() {
       loading = true;
     });
+
+      User user = firebaseAuth.currentUser; {
+        if(user != null){
+          setState(() => isLogedin = true);
+        }
+      }
+
 
     preferences = await SharedPreferences.getInstance();
     isLogedin = await googleSignIn.isSignedIn();
