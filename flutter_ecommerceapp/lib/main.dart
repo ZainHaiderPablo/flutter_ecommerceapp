@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerceapp/Pages/Register.dart';
 import 'package:flutter_ecommerceapp/Pages/home.dart';
 import './Pages/login.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -13,6 +14,6 @@ void main() async{
       theme: ThemeData(
         primaryColor: Colors.blueAccent
       ),
-      home: HomePage(),
+      home: Register(),
       ));
 }

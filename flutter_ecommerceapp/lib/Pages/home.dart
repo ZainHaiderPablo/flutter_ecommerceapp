@@ -7,7 +7,8 @@ import 'package:flutter_ecommerceapp/Components/Horizontal_ListView.dart';
 import 'package:flutter_ecommerceapp/Components/products.dart';
 import 'package:flutter_ecommerceapp/Pages/Cart.dart';
 import 'package:flutter_ecommerceapp/Pages/login.dart';
-
+import 'package:flutter_ecommerceapp/provider/app_provider.dart';
+import 'package:provider/provider.dart';
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -16,6 +17,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+   AppProvider appProvider = Provider.of<AppProvider>(context);
   Widget image_carousel = new Container(
     height: 210.0,
     child: Carousel(

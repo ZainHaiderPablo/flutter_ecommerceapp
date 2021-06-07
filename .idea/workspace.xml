@@ -23,16 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8b58d77-078e-4bb6-a233-4f66dfd77ac2" name="Default Changelist" comment="Create User">
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Commons.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/DataBase/Auth.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/DataBase/products.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/models/product.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/provider/app_provider.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/login.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/DataBase/Users.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/DataBase/Users.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/Register.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/Register.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/Pages/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_ecommerceapp/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_ecommerceapp/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\zain5\.android\avd\Pixel_3a_API_30_x86.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@7e6657e5]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -69,20 +78,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="D:/admin_side_flutter_ecommerce_app-master/admin_side_flutter_ecommerce_app-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flutter_ecommerceapp/assets/images" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zain5\AndroidStudioProjects\flutter_ecommerceapp\flutter_ecommerceapp\lib\Pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\zain5\AndroidStudioProjects\flutter_ecommerceapp\flutter_ecommerceapp\assets\images" />
       <recent name="C:\Users\zain5\AndroidStudioProjects\flutter_ecommerceapp\flutter_ecommerceapp\android\app" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\zain5\AndroidStudioProjects\flutter_ecommerceapp\flutter_ecommerceapp\lib\Pages" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -161,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620314398480</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Create User">
+      <created>1622820008779</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622820008779</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,34 +224,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="879" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619290128959" />
-    <state width="1340" height="220" key="GridCell.Tab.0.bottom" timestamp="1622137009747">
+    <state width="1877" height="169" key="GridCell.Tab.0.bottom" timestamp="1623060502104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622137009747" />
-    <state width="1340" height="220" key="GridCell.Tab.0.center" timestamp="1622137009747">
+    <state width="1877" height="169" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623060502104" />
+    <state width="1877" height="169" key="GridCell.Tab.0.center" timestamp="1623060502104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="220" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622137009747" />
-    <state width="1340" height="220" key="GridCell.Tab.0.left" timestamp="1622137009747">
+    <state width="1877" height="169" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623060502104" />
+    <state width="1877" height="169" key="GridCell.Tab.0.left" timestamp="1623060502104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="220" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622137009747" />
-    <state width="1340" height="220" key="GridCell.Tab.0.right" timestamp="1622137009747">
+    <state width="1877" height="169" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623060502104" />
+    <state width="1877" height="169" key="GridCell.Tab.0.right" timestamp="1623060502104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="220" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622137009747" />
+    <state width="1877" height="169" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623060502104" />
     <state x="908" y="125" width="998" height="716" key="SettingsEditor" timestamp="1622819588097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="908" y="125" width="998" height="716" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1622819588097" />
-    <state x="775" y="251" key="Vcs.Push.Dialog.v2" timestamp="1620314419546">
+    <state x="775" y="251" key="Vcs.Push.Dialog.v2" timestamp="1622820028542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="775" y="251" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620314419546" />
-    <state x="604" y="220" key="new project wizard" timestamp="1622103923107">
+    <state x="775" y="251" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1622820028542" />
+    <state x="604" y="220" key="new project wizard" timestamp="1622820387521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="604" y="220" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1622103923107" />
+    <state x="604" y="220" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1622820387521" />
     <state x="862" y="580" width="672" height="677" key="run.anything.popup" timestamp="1620051202905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

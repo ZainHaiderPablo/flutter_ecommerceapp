@@ -1,6 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerceapp/Commons.dart';
+import 'package:flutter_ecommerceapp/DataBase/Auth.dart';
+import 'package:flutter_ecommerceapp/Pages/login.dart';
 import '../DataBase/Users.dart';
 import 'home.dart';
 
@@ -22,6 +25,7 @@ class _RegisterState extends State<Register> {
   String groupValue = "male";
   bool loading = false;
   bool HidePassword = true;
+  Auth auth = Auth();
 
   @override
   Widget build(BuildContext context) {
@@ -110,43 +114,7 @@ class _RegisterState extends State<Register> {
                               ),
                             ),
                           ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.fromLTRB(14.0, 8.0, 14.0, 8.0),
-                            child: new Container(
-                              color: Colors.white.withOpacity(0.8),
-                              child: Row(
-                                children: <Widget>[
-                                  Expanded(
-                                      child: ListTile(
-                                          title: Text(
-                                            "male",
-                                            textAlign: TextAlign.end,
-                                            style:
-                                                TextStyle(color: Colors.white),
-                                          ),
-                                          trailing: Radio(
-                                              value: "male",
-                                              groupValue: groupValue,
-                                              onChanged: (e) =>
-                                                  valueChanged(e)))),
-                                  Expanded(
-                                      child: ListTile(
-                                          title: Text(
-                                            "female",
-                                            textAlign: TextAlign.end,
-                                            style:
-                                                TextStyle(color: Colors.white),
-                                          ),
-                                          trailing: Radio(
-                                              value: "female",
-                                              groupValue: groupValue,
-                                              onChanged: (e) =>
-                                                  valueChanged(e)))),
-                                ],
-                              ),
-                            ),
-                          ),
+
                           Padding(
                             padding:
                                 const EdgeInsets.fromLTRB(14.0, 8.0, 14.0, 8.0),
@@ -251,17 +219,57 @@ class _RegisterState extends State<Register> {
                                   ),
                                 )),
                           ),
-                          // Expanded(child: Container()),
-
                           Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: InkWell(
-                                  onTap: () {},
+                                  onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                                  },
                                   child: Text(
-                                    "Login",
+                                    "I already have an account",
                                     textAlign: TextAlign.center,
-                                    style: TextStyle(color: Colors.red),
-                                  ))),
+                                    style: TextStyle(color: deepOrange, fontSize: 16),
+                                  ))
+                          ),
+                          Padding(padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text("Or sign up with" , style: TextStyle(fontSize: 18 , color: Colors.grey)),
+
+                              ),
+
+                              Padding(padding: const EdgeInsets.fromLTRB(14, 8, 14, 8),
+                                child:Material(
+                                  child: MaterialButton(
+                                    onPressed: () async{
+                                      User user = await auth.googleSignIn();
+                                      if(user == null){
+                                        _userServices.createUser({
+                                          "name" : user.displayName,
+                                          "photo" : user.photoURL,
+                                          "email" : user.email,
+                                          "userId" : user.uid
+                                        });
+                                        changeScreenReplacement(context, HomePage());
+                                      }
+                                    },
+                                    child: Image.asset("assets/images/google.png" , width: 40,),
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          )),
+
+
+
+
+                          // Expanded(child: Container()),
+
+
                         ],
                       ))),
             ),
